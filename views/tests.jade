@@ -1,0 +1,9 @@
+//Created by lunhengle on 2016/7/5.
+extends layout
+block content
+    h1=title
+    ul
+        -each val in object
+        li= val.subjectId
+
+    p=object[1].subjectId + object[1].subjectTitle + object[1].subjectContent
